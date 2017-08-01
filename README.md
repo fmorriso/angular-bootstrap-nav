@@ -2,15 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.6.
 
-## .angular-cli.json
+## Further Information
 
-```
-"scripts": [
-    "../node_modules/jquery/dist/jquery.min.js",
-    "../node_modules/tether/dist/js/tether.min.js",
-    "../node_modules/bootstrap/dist/js/bootstrap.min.js"
-]
-```
+See the PDF document located in this same GitHub repository for more detailed information.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

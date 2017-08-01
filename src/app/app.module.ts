@@ -11,6 +11,7 @@ import { FooterComponent } from './footer/footer.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { AccordionExampleComponent } from './accordion-example/accordion-example.component';
 
 @NgModule({
 	declarations: [
@@ -20,7 +21,8 @@ import { ContactComponent } from './contact/contact.component';
 		FooterComponent,
 		PageNotFoundComponent,
 		AboutComponent,
-		ContactComponent
+		ContactComponent,
+		AccordionExampleComponent
 	],
 	imports: [
 		BrowserModule,

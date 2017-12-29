@@ -1,10 +1,10 @@
-import {BrowserModule} from '@angular/platform-browser';
-import {NgModule} from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { NgModule } from '@angular/core';
 
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { AccordionModule,  } from 'ngx-bootstrap';
 
-import {AppRoutingModule} from './app-routing.module';
-import {AppComponent} from './app.component';
+import { AppRoutingModule} from './app-routing.module';
+import { AppComponent} from './app.component';
 import { HomeComponent } from './home/home.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { FooterComponent } from './footer/footer.component';
@@ -26,7 +26,7 @@ import { AccordionExampleComponent } from './accordion-example/accordion-example
 	],
 	imports: [
 		BrowserModule,
-		NgbModule.forRoot(),
+		AccordionModule.forRoot(),
 		AppRoutingModule
 	],
 	providers: [],

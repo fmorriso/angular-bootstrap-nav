@@ -1,73 +1,50 @@
 
 <div class="container">
-    <div class="row">
-        <div class="col">
-            <a href="https://ng-bootstrap.github.io/#/components/accordion/examples" target="_blank">Bootstrap V4 Accordion Examples</a>
-        </div>
-    </div>
-    <ngb-accordion [closeOthers]="true">
-
-        <ngb-panel title="Simple 1">
-            <ng-template ngbPanelContent>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad adipisci, aspernatur at consectetur dicta, doloremque eius fugiat harum maxime nesciunt nostrum obcaecati omnis quas repudiandae sed sequi ut velit veritatis.
-            </ng-template>
-        </ngb-panel>
-
-        <ngb-panel title="Simple 2">
-            <ng-template ngbPanelContent>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam aspernatur aut consequatur corporis
-                    dicta dolore doloremque dolores doloribus enim eveniet expedita explicabo ipsa libero molestiae nam
-                    natus obcaecati odit possimus quae quam qui quibusdam quod quos repellat, suscipit velit vitae
-                    voluptatibus. At cum dolores ex harum ipsa ipsum molestias nemo odit officia sequi tenetur totam,
-                    voluptate voluptatibus! Aperiam at consequatur cum ea impedit ipsam minima mollitia nemo neque quae
-                    quasi quia repellat rerum sed soluta vel, voluptate voluptatem. Laboriosam non porro totam unde.
-                    Accusantium adipisci aliquam architecto, autem corporis cum dicta dolore doloribus eaque esse fugiat
-                    molestias sapiente sed soluta?</p>
-                <p>Consectetur eligendi iusto laudantium nisi non optio reiciendis! Accusantium, ad adipisci aperiam cum
-                    dolorum placeat quasi veritatis. Adipisci animi dolores eum excepturi? Aperiam saepe vitae
-                    voluptate. Dicta, doloremque doloribus ducimus ex ipsam itaque iure ullam voluptate. Adipisci
-                    corporis, debitis, deleniti dolor, doloremque est ipsa iste minus modi mollitia nihil perferendis
-                    porro quod repellendus reprehenderit rerum sit sunt unde? Aperiam, asperiores, assumenda, beatae
-                    earum maiores mollitia nisi porro repellendus saepe sunt velit vero voluptatibus! Aliquid fuga
-                    labore laudantium magnam quae. Accusantium ad aperiam dolorem dolorum eius fugit incidunt nam,
-                    necessitatibus neque non, odio perferendis quaerat quo tenetur veniam. Nihil, reiciendis
-                    repellendus!</p>
-                <p>Accusantium, aliquam amet commodi dicta dolorum eius et excepturi facere facilis, fuga non pariatur
-                    quod ratione rerum soluta, sunt tenetur veritatis! Aperiam dolorem explicabo ipsa laborum mollitia
-                    quisquam, repellat repellendus? Autem ex explicabo fugit itaque nesciunt. A, alias beatae culpa
-                    distinctio illum minima neque numquam officia quo voluptate! A commodi illo incidunt libero
-                    molestiae nam pariatur praesentium provident quia voluptatibus? Alias consequuntur iste reiciendis
-                    repellendus reprehenderit! Commodi distinctio eaque harum nostrum perferendis quas reprehenderit
-                    tenetur veniam veritatis vitae. Ab aliquam est ipsam odit possimus reiciendis similique, ut vel? Eum
-                    expedita explicabo inventore ipsa maiores nostrum nulla perspiciatis repudiandae unde velit!</p>
-                <p>At fugiat fugit ipsam, laudantium nesciunt quae quo ratione repellat. Animi aperiam assumenda
-                    deserunt ex exercitationem minus natus nesciunt placeat temporibus tenetur! Accusamus animi aut
-                    blanditiis est facilis harum hic illo in inventore itaque labore natus, nesciunt nulla obcaecati
-                    odio porro possimus quas qui quisquam ratione sequi, suscipit tempora veritatis! Aperiam incidunt
-                    laborum maiores minima, natus quaerat repellendus? Amet architecto blanditiis commodi consectetur
-                    cupiditate delectus deserunt distinctio dolor dolorem doloremque ducimus, eos error esse,
-                    exercitationem expedita fugiat inventore ipsa iure libero minus nam neque nisi nostrum obcaecati
-                    odit provident quo ratione recusandae rem reprehenderit, sint suscipit tenetur velit voluptate
-                    voluptatum?</p>
-            </ng-template>
-        </ngb-panel>
-
-        <ngb-panel title="Simple 3">
-            <ng-template ngbPanelContent>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A cupiditate dicta explicabo in, itaque
-                    maxime molestiae possimus quas similique veniam vero vitae. Dicta doloribus earum in molestias nobis
-                    quibusdam veniam.</p>
-                <p>Deleniti est eveniet, fugit, id laudantium non optio perspiciatis porro quae recusandae reiciendis
-                    repudiandae soluta velit? Aliquam delectus eligendi, laborum magnam maxime omnis placeat praesentium
-                    quis ratione rerum sequi ut?</p>
-                <p>A aperiam aut cum debitis dolores error esse facere fugit, harum incidunt inventore iste laudantium
-                    modi molestias nisi nobis odit omnis pariatur reiciendis rerum unde, veniam voluptatem. Optio, quo
-                    totam!</p>
-                <p>Adipisci animi aut consectetur corporis dolore doloremque doloribus dolorum earum eos error eum
-                    inventore laudantium maiores nam necessitatibus nesciunt nostrum odio officia pariatur quae quo
-                    similique sit, ullam voluptatibus voluptatum?</p>
-            </ng-template>
-        </ngb-panel>
-
-    </ngb-accordion>
+    <accordion [closeOthers]="oneAtATime">
+        <accordion-group heading="Header">
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque dolorum hic, magnam minima nihil
+                obcaecati. Animi, at blanditiis corporis cum deserunt dolore hic laborum, laudantium maxime neque nulla
+                ut veniam.
+            </div>
+            <div>Enim inventore magni non quod ratione. Alias, amet aperiam beatae dignissimos dolorum ipsam itaque
+                labore laudantium maxime molestiae nam nostrum provident quas qui ratione repellendus soluta tempora?
+                Blanditiis, explicabo porro.
+            </div>
+            <div>Adipisci aperiam commodi dignissimos dolore ea enim eum, fuga fugit harum hic laboriosam nulla,
+                perferendis quae quaerat rem repudiandae soluta tempore voluptate. Accusantium asperiores consequuntur
+                dignissimos dolore nihil nulla reprehenderit!
+            </div>
+            <div>Animi doloribus ea expedita incidunt laborum modi molestias, quas recusandae repellat unde. Assumenda
+                distinctio, eius et eveniet explicabo minus pariatur sint veniam. Animi dolores facere iste officiis
+                perspiciatis ratione recusandae.
+            </div>
+            <div>Animi doloremque illum itaque provident totam, unde voluptatibus. Dolorem, doloribus fugiat itaque
+                nobis quisquam tenetur vero? Aliquam amet architecto blanditiis debitis dignissimos eaque, harum quo sed
+                tenetur, totam veniam voluptate?
+            </div>
+        </accordion-group>
+        <accordion-group heading="Content 1">
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur dicta dolor repudiandae rerum.
+                Beatae earum eius enim esse in ipsa iste minus modi nostrum ratione rerum, sunt tempore totam?
+                Laboriosam.
+            </div>
+            <div>Assumenda earum eveniet expedita magni sit sunt tempora tenetur totam vero voluptatem! Accusantium
+                aperiam commodi culpa cumque delectus illum laudantium necessitatibus nostrum odio quibusdam. Ab
+                asperiores error expedita maxime soluta.
+            </div>
+        </accordion-group>
+        <accordion-group heading="Content 2">
+            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores eum illo iusto laboriosam molestias
+                nobis odit quia quisquam totam voluptatem. Asperiores beatae dignissimos facilis, harum ipsum optio
+                praesentium quod velit!
+            </div>
+            <div>Debitis et minima molestias nobis repudiandae! Accusamus dignissimos est expedita fuga illo illum
+                maxime molestiae nam natus obcaecati quibusdam rem, veritatis. Accusamus animi dolor esse et provident
+                velit veritatis vero!
+            </div>
+            <div>Amet blanditiis nisi vero. Enim expedita ipsam obcaecati ullam? Ab atque dolor dolorem eum excepturi id
+                nihil odio officiis perspiciatis quaerat quibusdam, quos tenetur. Animi aut iste nihil ut voluptatum.
+            </div>
+        </accordion-group>
+    </accordion>
 </div>

@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { AccordionModule,  } from 'ngx-bootstrap';
+import { AccordionModule, ButtonsModule } from 'ngx-bootstrap';
 
 import { AppRoutingModule} from './app-routing.module';
 import { AppComponent} from './app.component';
@@ -27,6 +27,7 @@ import { AccordionExampleComponent } from './accordion-example/accordion-example
 	imports: [
 		BrowserModule,
 		AccordionModule.forRoot(),
+		ButtonsModule.forRoot(),
 		AppRoutingModule
 	],
 	providers: [],

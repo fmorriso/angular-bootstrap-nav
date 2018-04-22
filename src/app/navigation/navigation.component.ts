@@ -32,6 +32,7 @@ export class NavigationComponent implements OnInit {
 	*/
 	collapseNav() {
 		if (this.navBarTogglerIsVisible()) {
+			console.log('collapseNav in NavigationComponent clicking navbarToggler')
 			this.navbarToggler.nativeElement.click();
 		}
 	}

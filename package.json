@@ -4,39 +4,44 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "build": "ng build --progress --verbose --vendor-chunk --extract-css",
-    "build-watch": "ng build --progress --verbose --vendor-chunk --extract-css --watch",
-    "build-prod": "ng build --progress --verbose --vendor-chunk --extract-css --prod",
-    "start": "ng serve --open --vendor-chunk --extract-css --common-chunk",
-    "start-prod": "ng serve --open --vendor-chunk --extract-css --common-chunk --prod",
+    "build":
+      "ng build --progress --verbose  --common-chunk --vendor-chunk --extract-css --progress --named-chunks",
+    "build-watch":
+      "ng build --progress --verbose --vendor-chunk --extract-css --named-chunks --watch",
+    "build-prod":
+      "ng build --progress --verbose --common-chunk --vendor-chunk --extract-css --named-chunks --prod --progress",
+    "start":
+      "ng serve --open --vendor-chunk --extract-css --common-chunk --named-chunks  --progress ",
+    "start-prod":
+      "ng serve --open --vendor-chunk --extract-css --common-chunk --named-chunks --prod --aot --progress",
     "test": "ng test",
     "lint": "ng lint --typeCheck --format stylish",
     "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^5.0.0",
-    "@angular/common": "^5.0.0",
-    "@angular/compiler": "^5.0.0",
-    "@angular/core": "^5.0.0",
-    "@angular/forms": "^5.0.0",
-    "@angular/http": "^5.0.0",
-    "@angular/platform-browser": "^5.0.0",
-    "@angular/platform-browser-dynamic": "^5.0.0",
-    "@angular/router": "^5.0.0",
-    "bootstrap": "4.0.0-beta.3",
+    "@angular/animations": "5.2.10",
+    "@angular/common": "5.2.10",
+    "@angular/compiler": "5.2.10",
+    "@angular/core": "5.2.10",
+    "@angular/forms": "5.2.10",
+    "@angular/http": "5.2.10",
+    "@angular/platform-browser": "5.2.10",
+    "@angular/platform-browser-dynamic": "5.2.10",
+    "@angular/router": "5.2.10",
+    "bootstrap": "^4.1.0",
     "core-js": "^2.0.0",
     "jquery": "^3.0.0",
-    "ngx-bootstrap": "^2.0.0-rc.0",
-    "popper.js": "^1.0.0",
-    "rxjs": "^5.0.0",
-    "tether": "^1.0.0",
-    "zone.js": "^0.8.0"
+    "ngx-bootstrap": "^2.0.0",
+    "popper.js": "^1.14.3",
+    "rxjs": "^5.5.10",
+    "tether": "^1.4.4",
+    "zone.js": "^0.8.26"
   },
   "devDependencies": {
-    "@angular/cli": "1.6.3",
-    "@angular/compiler-cli": "^5.0.0",
-    "@angular/language-service": "^5.0.0",
+    "@angular/cli": "1.7.4",
+    "@angular/compiler-cli": "5.2.10",
+    "@angular/language-service": "5.2.10",
     "@types/jasmine": "^2.0.0",
     "@types/jasminewd2": "^2.0.0",
     "@types/node": "^8.0.0",
@@ -52,6 +57,6 @@
     "protractor": "^5.0.0",
     "ts-node": "^3.0.0",
     "tslint": "^5.0.0",
-    "typescript": "^2.5.0"
+    "typescript": "2.6.2"
   }
 }

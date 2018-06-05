@@ -4,16 +4,11 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "build":
-      "ng build --progress --verbose  --common-chunk --vendor-chunk --extract-css --progress --named-chunks",
-    "build-watch":
-      "ng build --progress --verbose --vendor-chunk --extract-css --named-chunks --watch",
-    "build-prod":
-      "ng build --progress --verbose --common-chunk --vendor-chunk --extract-css --named-chunks --prod --progress",
-    "start":
-      "ng serve --open --vendor-chunk --extract-css --common-chunk --named-chunks  --progress ",
-    "start-prod":
-      "ng serve --open --vendor-chunk --extract-css --common-chunk --named-chunks --prod --aot --progress",
+    "build": "ng build --progress --verbose  --common-chunk --vendor-chunk --extract-css --progress --named-chunks",
+    "build-watch": "ng build --progress --verbose --vendor-chunk --extract-css --named-chunks --watch",
+    "build-prod": "ng build --progress --verbose --common-chunk --vendor-chunk --extract-css --named-chunks --prod --progress",
+    "start": "ng serve --open --vendor-chunk --extract-css --common-chunk --named-chunks  --progress ",
+    "start-prod": "ng serve --open --vendor-chunk --extract-css --common-chunk --named-chunks --prod --aot --progress",
     "test": "ng test",
     "lint": "ng lint --typeCheck --format stylish",
     "e2e": "ng e2e"
@@ -31,8 +26,9 @@
     "@angular/router": "5.2.10",
     "bootstrap": "^4.1.0",
     "core-js": "^2.0.0",
+    "font-awesome": "^4.7.0",
     "jquery": "^3.0.0",
-    "ngx-bootstrap": "^2.0.0",
+    "ngx-bootstrap": "^2.0.4",
     "popper.js": "^1.14.3",
     "rxjs": "^5.5.10",
     "tether": "^1.4.4",

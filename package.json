@@ -4,11 +4,10 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "build": "ng build --progress --verbose  --common-chunk --vendor-chunk --extract-css --progress --named-chunks",
-    "build-watch": "ng build --progress --verbose --vendor-chunk --extract-css --named-chunks --watch",
-    "build-prod": "ng build --progress --verbose --common-chunk --vendor-chunk --extract-css --named-chunks --prod --progress",
-    "start": "ng serve --open --vendor-chunk --common-chunk --progress ",
-    "start-prod": "ng serve --open --vendor-chunk --common-chunk --prod --aot --progress",
+    "build": "ng build --configuration=development",
+    "build-prod": "ng build --configuration=production",
+    "start": "ng serve --open --configuration=development",
+    "start-prod": "ng serve --open --configuration=production",
     "test": "ng test",
     "lint": "ng lint --typeCheck --format stylish",
     "e2e": "ng e2e"

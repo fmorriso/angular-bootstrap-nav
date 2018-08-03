@@ -36,7 +36,7 @@
               "outputHashing": "all",
               "sourceMap": false,
               "extractCss": true,
-			  "commonChunk": true,
+              "commonChunk": true,
               "namedChunks": true,
               "aot": true,
               "extractLicenses": true,
@@ -49,18 +49,18 @@
                 }
               ]
             },
-			"development" : {
-			"optimization": false,
+            "development": {
+              "optimization": false,
               "outputHashing": "none",
               "sourceMap": false,
               "extractCss": true,
-			  "commonChunk": true,
+              "commonChunk": true,
               "namedChunks": true,
               "aot": false,
               "extractLicenses": true,
               "vendorChunk": true,
-              "buildOptimizer": false,
-			}
+              "buildOptimizer": false
+            }
           }
         },
         "serve": {
@@ -72,7 +72,7 @@
             "production": {
               "browserTarget": "angular-bootstrap4-nav:build:production"
             },
-			"development": {
+            "development": {
               "browserTarget": "angular-bootstrap4-nav:build:development"
             }
           }

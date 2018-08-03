@@ -36,6 +36,7 @@
               "outputHashing": "all",
               "sourceMap": false,
               "extractCss": true,
+			  "commonChunk": true,
               "namedChunks": true,
               "aot": true,
               "extractLicenses": true,
@@ -47,7 +48,19 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ]
-            }
+            },
+			"development" : {
+			"optimization": false,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "extractCss": true,
+			  "commonChunk": true,
+              "namedChunks": true,
+              "aot": false,
+              "extractLicenses": true,
+              "vendorChunk": true,
+              "buildOptimizer": false,
+			}
           }
         },
         "serve": {
@@ -58,6 +71,9 @@
           "configurations": {
             "production": {
               "browserTarget": "angular-bootstrap4-nav:build:production"
+            },
+			"development": {
+              "browserTarget": "angular-bootstrap4-nav:build:development"
             }
           }
         },

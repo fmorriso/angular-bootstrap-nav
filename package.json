@@ -36,9 +36,9 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.7.2",
-    "@angular/cli": "^6.1.2",
-    "@angular/compiler-cli": "^6.1.0",
-    "@angular/language-service": "^6.1.0",
+    "@angular/cli": "^7.3.0",
+    "@angular/compiler-cli": "~7.2.0",
+    "@angular/language-service": "~7.2.0",
     "@types/jasmine": "^2.0.0",
     "@types/jasminewd2": "^2.0.0",
     "@types/node": "^8.0.0",
@@ -54,6 +54,6 @@
     "protractor": "^5.0.0",
     "ts-node": "^3.0.0",
     "tslint": "^5.0.0",
-    "typescript": "^2.9.0"
+    "typescript": "~3.2.0"
   }
 }

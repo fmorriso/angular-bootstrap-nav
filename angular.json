@@ -36,6 +36,7 @@
               "outputHashing": "all",
               "sourceMap": false,
               "extractCss": true,
+              "commonChunk": true,
               "namedChunks": true,
               "aot": true,
               "extractLicenses": true,
@@ -51,8 +52,9 @@
             "development": {
               "optimization": false,
               "outputHashing": "none",
-              "sourceMap": true,
+              "sourceMap": false,
               "extractCss": true,
+              "commonChunk": true,
               "namedChunks": true,
               "aot": false,
               "extractLicenses": true,

@@ -1,28 +1,25 @@
-import {Component, ElementRef, OnInit, VERSION, ViewChild} from '@angular/core';
+import { Component, ElementRef, OnInit, VERSION, ViewChild } from '@angular/core';
 
 @Component({
-	selector: 'app-navigation',
-	templateUrl: './navigation.component.html',
-	styleUrls: ['./navigation.component.scss']
+  selector: 'app-navigation',
+  templateUrl: './navigation.component.html',
+  styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent implements OnInit {
+  @ViewChild('navbarToggler') navbarToggler: ElementRef;
 
-	@ViewChild('navbarToggler') navbarToggler: ElementRef;
+  angularVersion: string;
 
-	angularVersion: string;
+  constructor() {}
 
+  ngOnInit() {
+    this.angularVersion = VERSION.full;
+  }
 
-	constructor() {
-	}
-
-	ngOnInit() {
-		this.angularVersion = VERSION.full;
-	}
-
-	// collapse the "hamburger stack" if it is currently expanded.
-	// Should be called on the click event of each navigation anchor.
-	// Example:
-	/*
+  // collapse the "hamburger stack" if it is currently expanded.
+  // Should be called on the click event of each navigation anchor.
+  // Example:
+  /*
 	   <li class="nav-item" routerLinkActive="active">
           <a (click)="collapseNav()" class="nav-link" [routerLink]="['/home']">Home</a>
        </li>
@@ -30,16 +27,15 @@ export class NavigationComponent implements OnInit {
            <a (click)="collapseNav()" class="nav-link" [routerLink]="['/about']">About</a>
        </li>
 	*/
-	collapseNav() {
-		if (this.navBarTogglerIsVisible()) {
-			console.log('collapseNav in NavigationComponent clicking navbarToggler')
-			this.navbarToggler.nativeElement.click();
-		}
-	}
+  collapseNav() {
+    if (this.navBarTogglerIsVisible()) {
+      console.log('collapseNav in NavigationComponent clicking navbarToggler');
+      this.navbarToggler.nativeElement.click();
+    }
+  }
 
-	private navBarTogglerIsVisible() {
-		const isVisible: boolean = (this.navbarToggler.nativeElement.offsetParent !== null);
-		return isVisible;
-	}
-
+  private navBarTogglerIsVisible() {
+    const isVisible: boolean = this.navbarToggler.nativeElement.offsetParent !== null;
+    return isVisible;
+  }
 }

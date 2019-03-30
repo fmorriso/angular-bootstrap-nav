@@ -1,10 +1,14 @@
 # AngularBootstrap4Nav
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.6.
+This project was generated with [Angular-CLI](https://github.com/angular/angular-cli) version 1.2.6.
+
+It has been subsequently upgraded to Angular-CLI 6.1.2 and Angular 6.1.1.
 
 ## Further Information
 
 See the PDF document located in this same GitHub repository for more detailed information.
+
+### ngx-
 
 ## Development server
 

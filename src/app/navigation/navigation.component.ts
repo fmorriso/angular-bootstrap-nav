@@ -6,7 +6,7 @@ import { Component, ElementRef, OnInit, VERSION, ViewChild } from '@angular/core
   styleUrls: ['./navigation.component.scss']
 })
 export class NavigationComponent implements OnInit {
-  @ViewChild('navbarToggler') navbarToggler: ElementRef;
+  @ViewChild('navbarToggler', {read: true, static: false}) navbarToggler: ElementRef;
 
   angularVersion: string;
 

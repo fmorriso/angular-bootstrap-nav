@@ -4,12 +4,12 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --open --configuration=development --progress",
-    "start-prod": "ng serve --open --configuration=production --progress",
-    "build": "ng build --configuration=development --progress",
-    "build-prod": "ng build --configuration=production --progress",
+    "start": "ng serve --open --configuration=development",
+    "start-prod": "ng serve --open --configuration=production",
+    "build": "ng build --configuration=development",
+    "build-prod": "ng build --configuration=production",
     "test": "ng test",
-    "lint": "ng lint --typeCheck --format stylish",
+    "lint": "ng lint --project --format stylish",
     "e2e": "ng e2e"
   },
   "private": true,

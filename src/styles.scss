@@ -2,6 +2,9 @@
 $enable-flex: true; // Enable Flexbox mode
 @import '~bootstrap/scss/bootstrap.scss';
 
+/* ngx-bootstrap */
+@import '~ngx-bootstrap/datepicker/bs-datepicker.scss';
+
 /* font-awesome */
 $fa-font-path: '../node_modules/font-awesome/fonts';
 @import '~font-awesome/scss/font-awesome.scss';

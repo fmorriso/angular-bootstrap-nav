@@ -6,7 +6,7 @@ describe('AngularVersionInformationService', () => {
 	beforeEach(() => TestBed.configureTestingModule({}));
 
 	it('should be created', () => {
-		const service: AngularVersionInformationService = TestBed.get(
+		const service: AngularVersionInformationService = TestBed.inject(
 			AngularVersionInformationService
 		);
 		expect(service).toBeTruthy();

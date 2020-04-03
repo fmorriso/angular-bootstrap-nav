@@ -1,8 +1,10 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
-import { AccordionModule, ButtonsModule, TooltipModule } from 'ngx-bootstrap';
-
+//
+import { AccordionModule } from 'ngx-bootstrap/accordion';
+import { ButtonsModule } from 'ngx-bootstrap/buttons';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
+//
 import { AppRoutingModule} from './app-routing.module';
 import { AppComponent} from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -13,6 +15,7 @@ import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { AccordionExampleComponent } from './accordion-example/accordion-example.component';
 import { NgxBootstrapExampleComponent } from './ngx-bootstrap-example/ngx-bootstrap-example.component';
+//
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({

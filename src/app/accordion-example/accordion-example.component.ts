@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AccordionExampleComponent implements OnInit {
 
-	oneAtATime: boolean = true;
+	oneAtATime = true;
 
   constructor() { }
 

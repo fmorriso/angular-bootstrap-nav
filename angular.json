@@ -27,10 +27,6 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "node_modules/jquery/dist/jquery.slim.min.js",
-              "node_modules/popper.js/dist/umd/popper.min.js",
-              "node_modules/tether/dist/js/tether.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
             ]
           },
           "configurations": {
@@ -50,7 +46,8 @@
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": true,
-              "buildOptimizer": true,
+							"buildOptimizer": true,
+							"progress": true,
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -71,10 +68,11 @@
               "extractCss": true,
               "commonChunk": true,
               "namedChunks": true,
-              "aot": false,
               "extractLicenses": true,
               "vendorChunk": true,
-              "buildOptimizer": false
+							"buildOptimizer": false,
+							"progress": true,
+							"watch": true
             }
           }
         },
@@ -108,12 +106,9 @@
             "scripts": [
               "node_modules/jquery/dist/jquery.slim.min.js",
               "node_modules/popper.js/dist/umd/popper.min.js",
-              "node_modules/tether/dist/js/tether.min.js",
-              "node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "node_modules/tether/dist/js/tether.min.js"
             ],
             "styles": [
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
-              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
               "src/styles.scss"
             ],
             "assets": [

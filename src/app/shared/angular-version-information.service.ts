@@ -1,20 +1,20 @@
 import { Injectable, VERSION } from '@angular/core';
 
 @Injectable({
-  providedIn: 'root'
+	providedIn: 'root',
 })
 export class AngularVersionInformationService {
-  public get versionFull(): string {
-    if (!VERSION || typeof VERSION === 'undefined') {
-      return 'undefined';
-    } else {
-      return VERSION.full;
-    }
-  }
+	public get versionFull(): string {
+		if (!VERSION || typeof VERSION === 'undefined') {
+			return 'undefined';
+		} else {
+			return VERSION.full;
+		}
+	}
 
-  public get version(): any {
-    return VERSION;
-  }
+	public get version(): any {
+		return VERSION;
+	}
 
-  constructor() {}
+	constructor() {}
 }

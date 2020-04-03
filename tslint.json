@@ -18,8 +18,8 @@
     ],
     "import-spacing": true,
     "indent": [
-      false,
-      "spaces"
+      true,
+      "tabs", 4
     ],
     "interface-over-type-literal": true,
     "label-position": true,
@@ -68,7 +68,6 @@
     "no-trailing-whitespace": false,
     "no-unnecessary-initializer": true,
     "no-unused-expression": true,
-    "no-use-before-declare": true,
     "no-var-keyword": true,
     "object-literal-sort-keys": false,
     "one-line": [

@@ -8,8 +8,6 @@ It has been subsequently upgraded to Angular-CLI 8.0.0 and Angular 8.0.1.
 
 See the PDF document located in this same GitHub repository for more detailed information.
 
-### ngx-
-
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.

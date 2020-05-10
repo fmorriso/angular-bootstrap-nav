@@ -5,7 +5,14 @@ import {
 	VERSION,
 	ViewChild,
 } from '@angular/core';
-
+/**
+ * You can set more than one class, as follows:
+ *
+ * ```
+ * <a routerLink="/user/bob" routerLinkActive="class1 class2">Bob</a>
+ * <a routerLink="/user/bob" [routerLinkActive]="['class1', 'class2']">Bob</a>
+ * ```
+ */
 @Component({
 	selector: 'app-navigation',
 	templateUrl: './navigation.component.html',

@@ -1,33 +1,62 @@
 <div class="container-fluid">
 	<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
-		<button #navbarToggler
-				class="navbar-toggler navbar-toggler-right"
-				type="button"
-				data-toggle="collapse"
-				data-target="#navbarCollapse"
-				aria-controls="navbarCollapse"
-				aria-expanded="false"
-				aria-label="Toggle navigation"
+		<button
+			#navbarToggler
+			class="navbar-toggler navbar-toggler-right"
+			type="button"
+			data-toggle="collapse"
+			data-target="#navbarCollapse"
+			aria-controls="navbarCollapse"
+			aria-expanded="false"
+			aria-label="Toggle navigation"
 		>
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<a class="navbar-brand" href="#">Angular {{angularVersion}} + Bootstrap V4</a>
+		<a class="navbar-brand" href="#"
+			>Angular {{ angularVersion }} + Bootstrap V4</a
+		>
 		<div class="collapse navbar-collapse" id="navbarCollapse">
+			<!--
+				When specifying routerLinkActive, you can set more than one class, as follows:
+
+				<a routerLink="/user/bob" routerLinkActive="class1 class2">Bob</a>
+				or
+				<a routerLink="/user/bob" [routerLinkActive]="['class1', 'class2']">Bob</a>
+			-->
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item" routerLinkActive="active">
-					<a (click)="collapseNav()" class="nav-link" [routerLink]="['/home']">Home</a>
+					<a (click)="collapseNav()" class="nav-link" [routerLink]="['/home']"
+						>Home</a
+					>
 				</li>
 				<li class="nav-item" routerLinkActive="active">
-					<a (click)="collapseNav()" class="nav-link" [routerLink]="['/about']">About</a>
+					<a (click)="collapseNav()" class="nav-link" [routerLink]="['/about']"
+						>About</a
+					>
 				</li>
 				<li class="nav-item" routerLinkActive="active">
-					<a (click)="collapseNav()" class="nav-link" [routerLink]="['/contact']">Contact</a>
+					<a
+						(click)="collapseNav()"
+						class="nav-link"
+						[routerLink]="['/contact']"
+						>Contact</a
+					>
 				</li>
 				<li class="nav-item" routerLinkActive="active">
-					<a (click)="collapseNav()" class="nav-link" [routerLink]="['/accordion']">Accordion</a>
+					<a
+						(click)="collapseNav()"
+						class="nav-link"
+						[routerLink]="['/accordion']"
+						>Accordion</a
+					>
 				</li>
 				<li class="nav-item" routerLinkActive="active">
-					<a (click)="collapseNav()" class="nav-link" [routerLink]="['/ngxbootstrap']">Ngx-Bootstrap</a>
+					<a
+						(click)="collapseNav()"
+						class="nav-link"
+						[routerLink]="['/ngxbootstrap']"
+						>Ngx-Bootstrap</a
+					>
 				</li>
 			</ul>
 		</div>

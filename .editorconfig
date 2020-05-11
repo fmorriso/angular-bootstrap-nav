@@ -9,6 +9,8 @@ tab_size = 4
 insert_final_newline = true
 trim_trailing_whitespace = true
 
+[*.html]
+quote_type = single
 
 [*.ts]
 quote_type = single

@@ -2,7 +2,7 @@
 
 This project was generated with [Angular-CLI](https://github.com/angular/angular-cli) version 1.2.6.
 
-It has been subsequently upgraded to Angular-CLI 8.0.0 and Angular 8.0.1.
+It has been subsequently upgraded to Angular-CLI 10 and Angular 10.
 
 ## Further Information
 

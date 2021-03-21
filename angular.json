@@ -38,14 +38,13 @@
               "optimization": true,
               "outputHashing": "all",
               "sourceMap": false,
-              "extractCss": true,
               "commonChunk": true,
               "namedChunks": true,
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": true,
-							"buildOptimizer": true,
-							"progress": true,
+              "buildOptimizer": true,
+              "progress": true,
               "fileReplacements": [
                 {
                   "replace": "src/environments/environment.ts",
@@ -63,14 +62,13 @@
               "optimization": false,
               "outputHashing": "none",
               "sourceMap": true,
-              "extractCss": true,
               "commonChunk": true,
               "namedChunks": true,
               "extractLicenses": true,
               "vendorChunk": true,
-							"buildOptimizer": false,
-							"progress": true,
-							"watch": true
+              "buildOptimizer": false,
+              "progress": true,
+              "watch": true
             }
           }
         },

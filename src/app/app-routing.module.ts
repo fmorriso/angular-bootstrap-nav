@@ -19,10 +19,11 @@ const routes: Routes = [
 
 const routeOptions: ExtraOptions = {
 	enableTracing: false,
+	relativeLinkResolution: 'legacy'
 };
 
 @NgModule({
 	imports: [RouterModule.forRoot(routes, routeOptions)],
 	exports: [RouterModule],
 })
-export class AppRoutingModule {}
+export class AppRoutingModule { }

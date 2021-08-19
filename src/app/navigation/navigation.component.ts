@@ -14,7 +14,7 @@ import { HighlightSpanKind } from 'typescript';
   styleUrls: ['./navigation.component.scss'],
 })
 export class NavigationComponent implements OnInit, AfterViewInit {
-  @ViewChild('navbarToggler') navbarToggler: ElementRef;
+  @ViewChild('navbarToggler') navbarToggler!: ElementRef;
 
   get angularVersion(): string {
     return VERSION.full;

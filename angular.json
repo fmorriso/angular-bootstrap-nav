@@ -97,11 +97,7 @@
             "karmaConfig": "./karma.conf.js",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "src/tsconfig.spec.json",
-            "scripts": [
-              "node_modules/jquery/dist/jquery.slim.min.js",
-              "node_modules/popper.js/dist/umd/popper.min.js",
-              "node_modules/tether/dist/js/tether.min.js"
-            ],
+            "scripts": [],
             "styles": [
               "src/styles.scss"
             ],

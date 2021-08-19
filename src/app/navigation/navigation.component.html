@@ -1,21 +1,23 @@
 <div class="container-fluid">
-	<nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
-		<button #navbarToggler
-						id="navbarToggler"
-						class="navbar-toggler navbar-toggler-right"
-						type="button"
-						data-toggle="collapse"
-						data-target="#navbarCollapse"
-						aria-controls="navbarCollapse"
-						aria-expanded="false"
-						aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<a class="navbar-brand"
-			 href="#">Angular {{ angularVersion }} + Bootstrap V4</a>
-		<div class="collapse navbar-collapse"
-				 id="navbarCollapse">
-			<!--
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-primary">
+    <button
+      #navbarToggler
+      id="navbarToggler"
+      class="navbar-toggler navbar-toggler-right"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarCollapse"
+      aria-controls="navbarCollapse"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#"
+      >Angular {{ angularVersion }} + Bootstrap V5</a
+    >
+    <div class="collapse navbar-collapse" id="navbarCollapse">
+      <!--
 				<a (click)="collapseNav()"
 
 				When specifying routerLinkActive, you can set more than one class, as follows:
@@ -24,28 +26,20 @@
 				or
 				<a routerLink="/user/bob" [routerLinkActive]="['class1', 'class2']">Bob</a>
 			-->
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item"
-						routerLinkActive="active">
-					<a class="nav-link"
-						 [routerLink]="['/home']">Home</a>
-				</li>
-				<li class="nav-item"
-						routerLinkActive="active">
-					<a class="nav-link"
-						 [routerLink]="['/about']">About</a>
-				</li>
-				<li class="nav-item"
-						routerLinkActive="active">
-					<a class="nav-link"
-						 [routerLink]="['/contact']">Contact</a>
-				</li>
-				<li class="nav-item"
-						routerLinkActive="active">
-					<a class="nav-link" 
-						 [routerLink]="['/accordion']">Accordion</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/home']">Home</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/about']">About</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/contact']">Contact</a>
+        </li>
+        <li class="nav-item" routerLinkActive="active">
+          <a class="nav-link" [routerLink]="['/accordion']">Accordion</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
 </div>

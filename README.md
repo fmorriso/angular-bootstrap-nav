@@ -2,7 +2,7 @@
 
 This project was generated with [Angular-CLI](https://github.com/angular/angular-cli) version 1.2.6.
 
-It has been subsequently upgraded to Angular-CLI 11 and Angular 11.
+It has been subsequently upgraded to Angular-CLI 12, Angular 12 and Bootstrap 5.
 
 ## Further Information
 

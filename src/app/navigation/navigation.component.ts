@@ -1,27 +1,31 @@
 import {
-	AfterViewInit,
-	Component,
-	ElementRef,
-	OnInit,
-	VERSION,
-	ViewChild,
+  AfterViewInit,
+  Component,
+  ElementRef,
+  OnInit,
+  VERSION,
+  ViewChild,
 } from '@angular/core';
 import { HighlightSpanKind } from 'typescript';
 
 @Component({
-	selector: 'app-navigation',
-	templateUrl: './navigation.component.html',
-	styleUrls: ['./navigation.component.scss'],
+  selector: 'app-navigation',
+  templateUrl: './navigation.component.html',
+  styleUrls: ['./navigation.component.scss'],
 })
 export class NavigationComponent implements OnInit, AfterViewInit {
-	@ViewChild('navbarToggler') navbarToggler: ElementRef;
+  @ViewChild('navbarToggler') navbarToggler!: ElementRef;
 
-	angularVersion: string;
+  get angularVersion(): string {
+    return VERSION.full;
+  }
 
-	constructor() { }
+  constructor() {
+    // this.navbarToggler = new ElementRef(null);
+  }
 
-	ngAfterViewInit(): void {
-/* 		if (this.navbarToggler) {
+  ngAfterViewInit(): void {
+    /* 		if (this.navbarToggler) {
 			console.log('ngAfterViewInit: navbarToggler is defined');
 			if (this.navbarToggler.nativeElement) {
 				console.log('ngAfterViewInit: navbarToggler.nativeElement is defined');
@@ -31,16 +35,14 @@ export class NavigationComponent implements OnInit, AfterViewInit {
 		} else {
 			console.warn('ngAfterViewInit: navbarToggler was undefined or null.');
 		} */
-	}
+  }
 
-	ngOnInit() {
-		this.angularVersion = VERSION.full;
-	}
+  ngOnInit() {}
 
-	// collapse the "hamburger stack" if it is currently expanded.
-	// Should be called on the click event of each navigation anchor.
-	// Example:
-	/*
+  // collapse the "hamburger stack" if it is currently expanded.
+  // Should be called on the click event of each navigation anchor.
+  // Example:
+  /*
 		 <li class="nav-item" routerLinkActive="active">
 					<a (click)="collapseNav()" class="nav-link" [routerLink]="['/home']">Home</a>
 			 </li>
@@ -48,31 +50,31 @@ export class NavigationComponent implements OnInit, AfterViewInit {
 					 <a (click)="collapseNav()" class="nav-link" [routerLink]="['/about']">About</a>
 			 </li>
 	*/
-	collapseNav() {
+  collapseNav() {
+    if (this.navBarTogglerIsVisible()) {
+      console.log('collapseNav: in NavigationComponent clicking navbarToggler');
+      this.navbarToggler.nativeElement.click();
+    } else {
+      console.log(
+        'collapseNav: navBarTogglerIsVisible() returned false or is undefined.'
+      );
+    }
+  }
 
-		if (this.navBarTogglerIsVisible()) {
-			console.log('collapseNav: in NavigationComponent clicking navbarToggler');
-			this.navbarToggler.nativeElement.click();
-		} else {
-			console.log('collapseNav: navBarTogglerIsVisible() returned false or is undefined.');
-		}
+  // 2021-03-21 does not work because the ElementRef navbarToggler is always undefined
+  private navBarTogglerIsVisible() {
+    let isVisible = false;
+    if (this.navbarToggler) {
+      if (this.navbarToggler.nativeElement) {
+        console.log('navbarToggler.nativeElement is defined');
+        isVisible = this.navbarToggler.nativeElement.offsetParent !== null;
+      } else {
+        console.warn('navbarToggler.nativeElement was undefined or null.');
+      }
+    } else {
+      console.warn('navbarToggler was undefined or null.');
+    }
 
-	}
-
-	// 2021-03-21 does not work because the ElementRef navbarToggler is always undefined
-	private navBarTogglerIsVisible() {
-		let isVisible = false;
-		if (this.navbarToggler) {
-			if (this.navbarToggler.nativeElement) {
-				console.log('navbarToggler.nativeElement is defined');
-				isVisible = this.navbarToggler.nativeElement.offsetParent !== null;
-			} else {
-				console.warn('navbarToggler.nativeElement was undefined or null.');
-			}
-		} else {
-			console.warn('navbarToggler was undefined or null.');
-		}
-
-		return isVisible;
-	}
+    return isVisible;
+  }
 }

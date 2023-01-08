@@ -1,6 +1,6 @@
 /* Bootstrap 5  */
 $enable-flex: true; // Enable Flexbox mode
-@import '~bootstrap/scss/bootstrap';
+@import '~bootstrap/dist/css/bootstrap.css';
 
 /* Prevent Bootstrap fixed navigation from covering up the body content */
 body {

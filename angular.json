@@ -123,8 +123,7 @@
 				}
 			}
 		}
-	},
-	"defaultProject": "angular-bootstrap4-nav",
+  },
 	"schematics": {
 		"@schematics/angular:component": {
 			"prefix": "app",

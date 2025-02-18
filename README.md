@@ -11,6 +11,7 @@ It has been subsequently upgraded to Angular-CLI 15, Angular 15 and Bootstrap 5.
 | @Angular/CLI |   19.1.7 |
 | Angular      |   19.1.7 |
 | Bootstrap    |    5.2.3 |
+| ng-bootstrap | 18.0.0 |
 | node         |  22.12.0 |
 | npm          |   11.0.0 |
 | WebStorm     | 2024.3.2 |
@@ -19,14 +20,16 @@ It has been subsequently upgraded to Angular-CLI 15, Angular 15 and Bootstrap 5.
 
 ## Change History
 
-| Date | Description                                   |
-|:-----|:----------------------------------------------|
-| ?    | Initial creation                              |
+| Date       | Description                                                 |
+|:-----------|:------------------------------------------------------------|
+| ?          | Initial creation with Angular 15.x and Bootstrap 5.2.x      |
+| 2025-02-17 | Upgrade to Angular 19, Bootstrap 5.3.3, ng-bootstrap 18.0.0 | 
 
 ## References
 
 * [Angular](https://angular.dev/overview)
-* [Bootstrap](https://material.angular.io/)
+* [Bootstrap](https://getbootstrap.com/)
+* [ng-bootstrap](https://ng-bootstrap.github.io/#/home)
 
 
 ## Further Information

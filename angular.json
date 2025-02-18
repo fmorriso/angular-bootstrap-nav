@@ -9,13 +9,16 @@
 			"projectType": "application",
 			"architect": {
 				"build": {
-					"builder": "@angular-devkit/build-angular:browser",
+					"builder": "@angular-devkit/build-angular:application",
 					"options": {
-						"outputPath": "dist",
-						"index": "src/index.html",
-						"main": "src/main.ts",
+						"outputPath": {
+              "base": "dist"
+            },
+            "index": "src/index.html",
 						"tsConfig": "src/tsconfig.app.json",
-						"polyfills": "src/polyfills.ts",
+						"polyfills": [
+              "src/polyfills.ts"
+            ],
 						"assets": [
 							"src/assets",
 							"src/favicon.ico"
@@ -23,14 +26,13 @@
 						"styles": [
 							"src/styles.scss"
 						],
-						"scripts": [],
-						"vendorChunk": true,
-						"extractLicenses": false,
-						"buildOptimizer": false,
+            "scripts": [],
+            "extractLicenses": false,
 						"sourceMap": true,
 						"optimization": false,
 						"namedChunks": true,
-						"progress": true
+            "progress": true,
+            "browser": "src/main.ts"
 					},
 					"configurations": {
 						"production": {
@@ -42,10 +44,8 @@
 							],
 							"optimization": true,
 							"outputHashing": "all",
-							"sourceMap": false,
-							"commonChunk": true,
-							"extractLicenses": true,
-							"buildOptimizer": true,
+              "sourceMap": false,
+              "extractLicenses": true,
 							"progress": true,
 							"fileReplacements": [
 								{
@@ -61,8 +61,7 @@
 									"maximumWarning": "6kb"
 								}
 							],
-							"outputHashing": "none",
-							"commonChunk": true,
+              "outputHashing": "none",
 							"extractLicenses": true,
 							"progress": true,
 							"watch": true
@@ -72,22 +71,22 @@
 				},
 				"serve": {
 					"builder": "@angular-devkit/build-angular:dev-server",
-					"options": {
-						"browserTarget": "angular-bootstrap4-nav:build"
+          "options": {
+            "buildTarget": "angular-bootstrap4-nav:build"
 					},
 					"configurations": {
-						"production": {
-							"browserTarget": "angular-bootstrap4-nav:build:production"
+            "production": {
+              "buildTarget": "angular-bootstrap4-nav:build:production"
 						},
-						"development": {
-							"browserTarget": "angular-bootstrap4-nav:build:development"
+            "development": {
+              "buildTarget": "angular-bootstrap4-nav:build:development"
 						}
 					}
 				},
 				"extract-i18n": {
 					"builder": "@angular-devkit/build-angular:extract-i18n",
-					"options": {
-						"browserTarget": "angular-bootstrap4-nav:build"
+          "options": {
+            "buildTarget": "angular-bootstrap4-nav:build"
 					}
 				},
 				"test": {

@@ -8,8 +8,8 @@ An Angular project that uses Bootstrap for styling with the help of ng-bootstrap
 |:-------------|---------:|
 | @Angular/CLI |   19.1.7 |
 | Angular      |   19.1.7 |
-| Bootstrap    |    5.2.3 |
-| ng-bootstrap | 18.0.0 |
+| Bootstrap    |    5.3.3 |
+| ng-bootstrap |   18.0.0 |
 | node         |  22.12.0 |
 | npm          |   11.0.0 |
 | WebStorm     | 2024.3.2 |

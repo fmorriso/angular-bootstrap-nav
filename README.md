@@ -4,6 +4,31 @@ This project was generated with [Angular-CLI](https://github.com/angular/angular
 
 It has been subsequently upgraded to Angular-CLI 15, Angular 15 and Bootstrap 5.
 
+## Tools Used
+
+| Tool         |  Version |
+|:-------------|---------:|
+| @Angular/CLI |   19.1.7 |
+| Angular      |   19.1.7 |
+| Bootstrap    |    5.2.3 |
+| node         |  22.12.0 |
+| npm          |   11.0.0 |
+| WebStorm     | 2024.3.2 |
+| VSCode       |   1.97.2 |
+
+
+## Change History
+
+| Date | Description                                   |
+|:-----|:----------------------------------------------|
+| ?    | Initial creation                              |
+
+## References
+
+* [Angular](https://angular.dev/overview)
+* [Bootstrap](https://material.angular.io/)
+
+
 ## Further Information
 
 See the PDF document located in this same GitHub repository for more detailed information.

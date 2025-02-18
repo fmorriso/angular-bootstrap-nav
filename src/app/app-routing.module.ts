@@ -9,12 +9,12 @@ import { AccordionExampleComponent } from './accordion-example/accordion-example
 
 
 const routes: Routes = [
-	{ path: 'home', component: HomeComponent },
-	{ path: 'about', component: AboutComponent },
-	{ path: 'contact', component: ContactComponent },
-	{ path: 'accordion', component: AccordionExampleComponent },
-	{ path: '', redirectTo: 'home', pathMatch: 'full' },
-	{ path: '**', component: PageNotFoundComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'about', component: AboutComponent },
+  { path: 'contact', component: ContactComponent },
+  { path: 'accordion', component: AccordionExampleComponent },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: '**', component: PageNotFoundComponent },
 ];
 
 const routeOptions: ExtraOptions = {
@@ -22,7 +22,7 @@ const routeOptions: ExtraOptions = {
 };
 
 @NgModule({
-	imports: [RouterModule.forRoot(routes, routeOptions)],
-	exports: [RouterModule],
+  imports: [RouterModule.forRoot(routes, routeOptions)],
+  exports: [RouterModule],
 })
 export class AppRoutingModule { }

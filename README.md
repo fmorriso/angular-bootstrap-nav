@@ -4,31 +4,31 @@ An Angular project that uses Bootstrap for styling with the help of ng-bootstrap
 
 ## Tools Used
 
-| Tool         |  Version |
-|:-------------|---------:|
-| @Angular/CLI |   19.1.7 |
-| Angular      |   19.1.7 |
-| Bootstrap    |    5.3.3 |
-| ng-bootstrap |   18.0.0 |
-| node         |  22.12.0 |
-| npm          |   11.0.0 |
-| WebStorm     | 2024.3.3 |
-| VSCode       |   1.97.2 |
-
+| Tool            |  Version |
+| :-------------- | -------: |
+| @Angular/CLI    |   19.1.8 |
+| Angular         |   19.1.7 |
+| Bootstrap       |    5.3.3 |
+| Bootstrap-icons |   1.11.3 |
+| ng-bootstrap    |   18.0.0 |
+| node            |  22.12.0 |
+| npm             |   11.0.0 |
+| WebStorm        | 2024.3.3 |
+| VSCode          |   1.97.2 |
 
 ## Change History
 
 | Date       | Description                                                 |
-|:-----------|:------------------------------------------------------------|
+| :--------- | :---------------------------------------------------------- |
 | ?          | Initial creation with Angular 15.x and Bootstrap 5.2.x      |
-| 2025-02-17 | Upgrade to Angular 19, Bootstrap 5.3.3, ng-bootstrap 18.0.0 | 
+| 2025-02-17 | Upgrade to Angular 19, Bootstrap 5.3.3, ng-bootstrap 18.0.0 |
+| 2025-02-23 | Upgrade Angular/CLI, Angular to latest versions             |
 
 ## References
 
-* [Angular](https://angular.dev/overview)
-* [Bootstrap](https://getbootstrap.com/)
-* [ng-bootstrap](https://ng-bootstrap.github.io/#/home)
-
+- [Angular](https://angular.dev/overview)
+- [Bootstrap](https://getbootstrap.com/)
+- [ng-bootstrap](https://ng-bootstrap.github.io/#/home)
 
 ## Further Information
 
